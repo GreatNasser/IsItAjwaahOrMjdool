@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>هل هذه عجوة أم مجدول؟ 🌴</title>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    <style>
+        body {
+            font-family: 'Tahoma', sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            direction: rtl;
+            padding: 30px;
+        }
+        h1 { color: #4E2A1E; }
+        button, label {
+            background-color: #6B4226;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        img { max-width: 300px; margin-top: 20px; border-radius: 20px; box-shadow: 0 0 10px #aaa; }
+        #label-container { font-size: 1.2em; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>🌴 هل هذه عجوة أم مجدول؟</h1>
+    <div>
+        <input type="file" id="imageUpload" accept="image/*">
+    </div>
+    <img id="preview" src="" alt="">
+    <div id="label-container">📷 في انتظار الصورة...</div>
+
+    <script src="index.js"></script>
+</body>
+</html>
